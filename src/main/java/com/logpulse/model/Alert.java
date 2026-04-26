@@ -1,0 +1,20 @@
+package com.logpulse.model;
+
+import jakarta.persistence.*;
+import lombok.*;
+import java.time.LocalDateTime;
+
+@Entity
+@Table(name="alerts")
+@Data
+@NoArgsConstructor
+@AllArgsConstructor
+public class Alert 
+{
+    @Id
+    @GeneratedValue(strategy=GenerationType.IDENTITY)
+    private Long id;
+    private String message;
+    private LogLevel level;
+    private LocalDateTime timestamp;
+}
