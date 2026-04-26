@@ -57,5 +57,5 @@ public class LogController {
         public String deleteLog(@PathVariable Long id) {
         ls.deleteLog(id);
         return "Log deleted successfully!";
-}
+    }
 }
