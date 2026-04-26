@@ -155,6 +155,12 @@ POST `/logs`
 * Prevented duplicate alerts using recent alert checks
 
 ---
+## Additional Features
+
+- Alert rule deletion via UI and REST API  
+- Automatic UI refresh after rule creation and deletion
+
+---
 
 ## Future Improvements
 
@@ -168,6 +174,12 @@ POST `/logs`
 
 * **Live Demo (Render):** [Insert Render Deployment Link Here]
 * **Cloud Deployment (AWS EC2):** [Insert AWS EC2 Deployment Link Here]
+
+---
+## Design Note
+
+Logs are treated as immutable for traceability in real-world systems.  
+A delete endpoint is included only for administrative/debug purposes and is not part of the core system design.
 
 ---
 ## Author
