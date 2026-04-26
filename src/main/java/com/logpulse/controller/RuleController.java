@@ -26,4 +26,9 @@ public class RuleController
     {
         return ars.getActiveRules();
     }
+    @DeleteMapping("/{id}")
+    public void deleteRule(@PathVariable Long id)
+    {
+        ars.deleteRule(id);
+    }
 }

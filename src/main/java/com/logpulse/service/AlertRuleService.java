@@ -22,4 +22,8 @@ public class AlertRuleService
     {
        return arr.save(rule);
     }
+    public void deleteRule(Long id)
+    {
+        arr.deleteById(id);
+    }
 }

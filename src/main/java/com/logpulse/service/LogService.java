@@ -84,4 +84,7 @@ public class LogService {
     public List<Log> getRecentLogs(LocalDateTime time) {
         return lr.findByTimestampAfter(time);
     }
+    public void deleteLog(Long id) {
+        lr.deleteById(id);
+}
 }
