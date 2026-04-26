@@ -53,4 +53,9 @@ public class LogController {
         LocalDateTime timestamp = LocalDateTime.parse(time);
         return ls.getRecentLogs(timestamp);
     }
+    @DeleteMapping("/{id}")
+        public String deleteLog(@PathVariable Long id) {
+        ls.deleteLog(id);
+        return "Log deleted successfully!";
+}
 }
